@@ -1,0 +1,37 @@
+---
+title: "Week 6 in Class Code"
+author: "Lena Hicks"
+date: "May 10, 2023"
+output: html_document
+---
+
+# Set up
+
+Loading in packages
+
+```{r package-set-up}
+library(tidyverse) #general usage
+library(here) #organization
+library(ggmice) #missing data visualization
+library(skimr) #quick glimpses at data
+library(plotly) #interactive plots
+library(NatParksPalettes) #one example of color palette package
+library(wesanderson) #another example of color palette package
+library(patchwork) #put plots together
+```
+
+
+# Load in the data
+
+```{r loading-data}
+# create a new object called whale 
+# read in whales data
+whales <- read_csv(
+  here("data", "Graywhale_watching_2007_2019.csv")
+  
+)
+```
+
+
+
+
